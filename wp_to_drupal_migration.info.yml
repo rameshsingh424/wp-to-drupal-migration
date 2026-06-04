@@ -1,0 +1,11 @@
+name: WordPress to Drupal Migration
+type: module
+description: Migrates WordPress posts, pages, custom post types, taxonomies, custom fields, images, attachments, and inline images into Drupal.
+package: Migration
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:node
+  - drupal:file
+  - drupal:image
+  - drupal:taxonomy
+  - drupal:path_alias

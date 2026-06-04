@@ -1,0 +1,18 @@
+services:
+  logger.channel.wp_to_drupal_migration:
+    parent: logger.channel_base
+    arguments: ['wp_to_drupal_migration']
+
+  wp_to_drupal_migration.migration_service:
+    class: Drupal\wp_to_drupal_migration\Service\WordPressMigrationService
+    arguments:
+      - '@config.factory'
+      - '@database'
+      - '@entity_type.manager'
+      - '@entity_field.manager'
+      - '@file_system'
+      - '@file.repository'
+      - '@file_url_generator'
+      - '@state'
+      - '@http_client'
+      - '@logger.channel.wp_to_drupal_migration'

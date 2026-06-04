@@ -1,0 +1,7 @@
+services:
+  wp_to_drupal_migration.commands:
+    class: Drupal\wp_to_drupal_migration\Commands\WordPressToDrupalMigrationCommands
+    arguments:
+      - '@wp_to_drupal_migration.migration_service'
+    tags:
+      - { name: drush.command }

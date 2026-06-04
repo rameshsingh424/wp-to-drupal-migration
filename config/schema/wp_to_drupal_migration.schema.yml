@@ -1,0 +1,67 @@
+wp_to_drupal_migration.settings:
+  type: config_object
+  label: 'WordPress to Drupal migration settings'
+  mapping:
+    wordpress_connection_key:
+      type: string
+      label: 'WordPress database connection key'
+    wordpress_table_prefix:
+      type: string
+      label: 'WordPress table prefix'
+    wordpress_uploads_url:
+      type: string
+      label: 'WordPress uploads URL'
+    wordpress_uploads_path:
+      type: string
+      label: 'WordPress uploads local path'
+    default_drupal_uid:
+      type: integer
+      label: 'Default Drupal user ID'
+    default_body_format:
+      type: string
+      label: 'Default body text format'
+    target_file_directory:
+      type: string
+      label: 'Drupal target file directory'
+    post_status_map:
+      type: sequence
+      label: 'WordPress status to Drupal status map'
+      sequence:
+        type: integer
+    post_type_bundle_map:
+      type: sequence
+      label: 'WordPress post type to Drupal bundle map'
+      sequence:
+        type: string
+    post_alias_prefix_map:
+      type: sequence
+      label: 'WordPress post type to Drupal path alias prefix map'
+      sequence:
+        type: string
+    featured_image_field:
+      type: string
+      label: 'Featured image field'
+    attachment_file_field:
+      type: string
+      label: 'Attachment file field'
+    raw_meta_field:
+      type: string
+      label: 'Raw WordPress meta field'
+    wp_id_field:
+      type: string
+      label: 'WordPress post ID field'
+    taxonomy_vocabulary_map:
+      type: sequence
+      label: 'WordPress taxonomy to Drupal vocabulary map'
+      sequence:
+        type: string
+    taxonomy_field_map:
+      type: sequence
+      label: 'WordPress taxonomy to Drupal field map'
+      sequence:
+        type: string
+    custom_field_map:
+      type: sequence
+      label: 'WordPress post meta to Drupal field map'
+      sequence:
+        type: string

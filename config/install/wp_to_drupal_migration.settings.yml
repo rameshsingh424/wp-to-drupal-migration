@@ -1,0 +1,57 @@
+wordpress_connection_key: wordpress
+wordpress_table_prefix: wp_
+wordpress_uploads_url: 'https://example.com/wp-content/uploads'
+wordpress_uploads_path: '/var/www/wordpress/wp-content/uploads'
+
+default_drupal_uid: 1
+default_body_format: full_html
+target_file_directory: 'public://wp-migration'
+
+post_status_map:
+  publish: 1
+  private: 0
+  draft: 0
+  pending: 0
+  future: 0
+
+post_type_bundle_map:
+  post: article
+  page: page
+  product: product
+  portfolio: portfolio
+  news: article
+
+post_alias_prefix_map:
+  post: '/blog'
+  page: ''
+  product: '/products'
+  portfolio: '/portfolio'
+  news: '/news'
+
+featured_image_field: field_image
+attachment_file_field: field_attachments
+raw_meta_field: field_wp_raw_meta
+wp_id_field: field_wp_id
+
+taxonomy_vocabulary_map:
+  category: categories
+  post_tag: tags
+  product_cat: product_categories
+  product_tag: product_tags
+
+taxonomy_field_map:
+  category: field_categories
+  post_tag: field_tags
+  product_cat: field_product_categories
+  product_tag: field_product_tags
+
+custom_field_map:
+  _yoast_wpseo_title: field_meta_title
+  _yoast_wpseo_metadesc: field_meta_description
+  subtitle: field_subtitle
+  hero_title: field_hero_title
+  hero_description: field_hero_description
+  button_text: field_button_text
+  button_url: field_button_link
+  gallery: field_gallery
+  price: field_price
