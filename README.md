@@ -1,5 +1,33 @@
 # WordPress to Drupal Migration
 
+A reusable Drupal migration module for transferring structured content from WordPress into Drupal.
+
+The module supports migration workflows for posts, pages, users, taxonomies, media, metadata and custom fields while using Drupal APIs and Drush-based commands.
+
+## Key Capabilities
+
+- WordPress posts and pages migration
+- User and author mapping
+- Category and taxonomy migration
+- Media and attachment migration
+- Custom-field mapping
+- Drupal Entity API integration
+- Drush-based execution
+- Configurable source database connection
+- Migration logging and troubleshooting support
+
+## Technology Stack
+
+- PHP
+- Drupal
+- WordPress
+- Drupal Entity API
+- Drush
+- MySQL
+- Content Migration
+- Taxonomy Mapping
+
+  
 ## Overview
 
 WordPress to Drupal Migration is a Drupal custom module that imports WordPress content into Drupal using Drupal entity APIs instead of direct SQL writes.
@@ -16,6 +44,16 @@ The module migrates:
 - WordPress inline images and inline file links inside body HTML
 - WordPress slugs into Drupal path aliases
 - WordPress author ownership by matching author email to an existing Drupal user
+
+## Engineering Contribution
+
+- Designed the migration architecture and content-mapping strategy
+- Defined source-to-target entity relationships
+- Implemented reusable migration components
+- Handled taxonomy, media, metadata and user mapping
+- Added validation, logging and error-handling considerations
+- Documented installation, configuration and execution workflows
+- Structured the module for maintainability and future extension
 
 ## Requirements
 
